@@ -13,11 +13,10 @@ let mayorValor: number = 7;
 
 let aleatorio = function (menorValor, mayorValor: number) {
   let edades: number[] = new Array(5);
-  edades[0] = 4;
-  edades[1] = 6;
-  edades[2] = 4;
-  edades[3] = 7;
-  edades[4] = 5;
+  for (let i = 0; i < 6; i++){
+    edades[i] = Math.floor(Math.random() * (mayorValor - menorValor + 1) ) + menorValor;
+
+  }
 
   let promedio: number = 0;
 
